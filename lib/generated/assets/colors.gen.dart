@@ -22,6 +22,9 @@ class ColorName {
   /// Color: #3DAE8C
   static const Color primary = Color(0xFF3DAE8C);
 
+  /// Color: #E74646
+  static const Color red = Color(0xFFE74646);
+
   /// Color: #1D1E22
   static const Color secondary = Color(0xFF1D1E22);
 }

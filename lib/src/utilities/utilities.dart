@@ -1,3 +1,3 @@
-export 'mt_dimens.dart';
-export 'mt_l10n.dart';
-export 'mt_theme.dart';
+export 'resources/mt_dimens.dart';
+export 'resources/mt_l10n.dart';
+export 'resources/mt_theme.dart';

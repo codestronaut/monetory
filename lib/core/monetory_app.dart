@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:monetory/src/features/features.dart';
 
 import '../generated/l10n/l10n.dart';
+import 'monetory_app_router.dart';
 
 class MonetoryApp extends StatelessWidget {
   const MonetoryApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    final appRouter = MonetoryAppRouter();
+
+    return MaterialApp.router(
       title: 'Monetory',
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       debugShowCheckedModeBanner: false,
-      home: OnboardingPage(),
+      routerConfig: appRouter.config(),
     );
   }
 }

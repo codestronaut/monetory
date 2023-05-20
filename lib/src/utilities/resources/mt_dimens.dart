@@ -1,6 +1,12 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 extension MtDimensX on BuildContext {
+  /// [MediaQuery] Get access to device width
+  double get deviceWidth => MediaQuery.of(this).size.width;
+
+  /// [MediaQuery] Get access to device height
+  double get deviceHeight => MediaQuery.of(this).size.height;
+
   double get dimens2Pt => 2.0;
   double get dimens4Pt => 4.0;
   double get dimens8Pt => 8.0;

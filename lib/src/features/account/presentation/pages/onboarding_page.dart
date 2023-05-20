@@ -1,14 +1,18 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:monetory/generated/generated.dart';
-import 'package:monetory/src/components/components.dart';
-import 'package:monetory/src/utilities/utilities.dart';
 
+import '../../../../../generated/generated.dart';
+import '../../../../components/components.dart';
+import '../../../../utilities/utilities.dart';
+
+@RoutePage()
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return context.mtPageBuilder(
+      showAppBar: false,
       backgroundColor: Colors.grey.shade50,
       body: SafeArea(
         child: Padding(

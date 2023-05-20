@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:monetory/src/utilities/utilities.dart';
 
 import '../../../generated/generated.dart';
+import '../../utilities/utilities.dart';
 
 enum MtButtonStyle {
   filled,
